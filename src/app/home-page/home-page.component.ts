@@ -14,4 +14,7 @@ export class HomePageComponent {
   navigateToMapDisplay() {
     this.router.navigate(['/map-display']);
   }
+  navigateToDataDisplay(){
+    this.router.navigate(['/data-display']);
+  }
 }
