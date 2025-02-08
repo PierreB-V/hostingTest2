@@ -8,7 +8,11 @@ import { Router } from '@angular/router';
   styleUrl: './data-display.component.scss'
 })
 export class DataDisplayComponent {
- constructor(private router: Router) {}
+  protected apiUrl: string|any = 'https://jsonplaceholder.typicode.com/posts';
+
+ constructor(private router: Router) {
+ }
+
 
   navigateToHome(): void {
     this.router.navigate(['/']);
